@@ -1,0 +1,51 @@
+
+
+h1{
+    font-family: monospace;
+    color:rgb(196, 60, 11);
+    text-align: center;
+    
+}
+
+
+.livros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+
+.fileiras {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.fileiras .imgs_capa {
+    width: 300px; 
+    height: 400px;
+    position: relative;
+}
+
+.fileiras .imgs_capa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.fileiras .imgs_capa:hover {
+    transform: scale(1.1);
+}
+
+.fileiras .legenda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+}
